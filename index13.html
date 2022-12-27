@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>曰茶去</title>
+		<style>
+			 *,body{
+        	width:100%;
+        	height:100%;
+            padding: 0;
+            margin:0;
+            
+        }
+        #bg{
+            width: 100%;
+            height: 100%;
+            margin:0px auto;
+            padding:0px auto;
+            position:absolute;
+            background-image: url('img/daobg.jpg');
+            background-size: cover;
+            position:relative;
+            z-index:1;
+        }
+		p{
+			font-size:40px;
+        	font-family:"zihun215hao-qingpingshoushu";
+        	position:relative;
+        	top:7.5%;
+        	left:43%;
+			z-index:2;
+		}
+		#nian2{
+		
+			width: 100%;
+		    height: 90%;
+		    position: relative;
+		    top: -98%;
+            left: 4%;
+			z-index:3;
+		}	
+		
+		.content{
+			width: 70%;
+		    height: 10%;
+		    font-size: 25px;
+		    text-align: center;
+		    font-family:"zihun215hao-qingpingshoushu";
+		    position: relative;
+		    top: -105%;
+		    left: 22%;
+		    animation:nian 5s linear 1;
+		}
+		.content font{
+            	font-family:"新宋体";
+        }
+        a{
+        	border:2px solid black;
+        	position:relative;
+        	top:-122%;
+        	left:80%;
+        	z-index:4;
+        }
+		</style>
+		<script type="text/javascript">
+	  	var i=2;
+	  	function next(){
+	  		i++;
+	  		if(i>=3){
+	  			i=3;
+	  		}
+	  		document.getElementById("nian2").src="img/nian"+i+".PNG";
+	  	}
+	  </script>
+	</head>
+	<body>
+		<div id="bg" onclick="next()">
+			<p>碾    茶</p>
+			<img id="nian2" src="img/nian2.png">
+			<div class="content">将碎茶用纸包裹捣碎后，放入茶碾中磨细<br/><font color="brown" size="4%">[点击屏幕即可]</font></div>
+			<a href="index41.html" target="_self">下一工序</a>
+		</div>
+	</body>
+</html>

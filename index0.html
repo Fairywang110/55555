@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pic {
+            width: 160px;
+            height: 92px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px 5px #e5e5e5;
+            position: absolute;
+            left: 200px;
+            top: 200px
+        }
+    </style>
+</head>
+
+<body>
+    <img class="pic"
+        src="img/huzuo.png" alt="">
+    <script type="text/javascript">
+        var img = document.getElementsByClassName('pic')[0]
+        var cloneImg, flag = false
+        img.onclick = function (event) {
+            flag = true //表示click事件出发了
+            // 获取鼠标坐标值html
+            var mouseX = event.pageX
+            var mouseY = event.pageY
+            // 计算复制的图片的做编制
+            var x = mouseX - 80
+            var y = mouseY - 46
+            // 获取原有图片当前显示的宽度和高度
+            // 复制元素,并且显示（鼠标显示在图片的正中心）在页面中
+            cloneImg = img.cloneNode()
+            document.body.appendChild(cloneImg)
+            cloneImg.style.left = x + 'px'
+            cloneImg.style.top = y + 'px'
+        }
+        // 鼠标跟随移动 - 鼠标跟随事件
+        var html = document || document.documentElement //代表当前页面
+        html.onmousemove = function (event) {
+            if (flag === true) {
+                // 获取鼠标坐标值html
+                var mouseX = event.pageX
+                var mouseY = event.pageY
+                // 计算复制的图片的做编制
+                var x = mouseX - 80
+                var y = mouseY - 46
+                cloneImg.style.left = x + 'px'
+                cloneImg.style.top = y + 'px'
+                cloneImg.onclick = release
+            }
+        }
+        // 释放图片
+        function release() {
+            flag = false
+        }
+    </script>
+</body>
+
+</html>

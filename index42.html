@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	    <style type="text/css">
+	        *,body{
+	        	width:100%;
+	        	height:100%;
+	            padding: 0;
+	            margin:0; 
+	            overflow: hidden;
+	        }
+	        #mainDiv{
+            	width:100%;
+            	height:100%;
+                margin:0px auto;
+                padding:0px auto;
+            	background-image:url("img/bg.jpg");
+            	background-size:cover;
+            	background-position:center;
+            	background-repeat:no-repeat;	
+            }
+            .dituo{
+            	width:65%;
+            	height:22%;
+            	position:relative;
+            	top:-13.5%;
+            	left:20%;
+	            z-index:1;
+            }
+            #chaxian{
+            	width:40%;
+            	height:40%;
+            	position:relative;
+            	top:15%;
+            	left:44%;
+            	animation:come 3s linear 1 ;
+            	z-index:2;	
+            }
+             #chahu{
+            	width: 40%;
+				height:25%;
+				position: relative;
+				top: -285%;
+				left: 54%;
+				animation:come 3s linear 1 ;
+            }
+             span{
+            	font-size:40px;
+            	font-family:"zihun215hao-qingpingshoushu";
+            	position:relative;
+            	top:-23.5%;
+            	left:40%;
+            }
+            .content{
+            	font-size:25px;
+            	font-family:"zihun215hao-qingpingshoushu";
+            	text-align:center;
+            	position:relative;
+            	top: -113.5%;
+            	left:9%;
+            	animation:come2 5s linear 1;
+            }
+            .content font{
+            	font-family:"新宋体";
+            }
+            #tang{
+            	    width: 50%;
+			    height: 35%;
+			    position: relative;
+			    top: 20%;
+			    left: 5%;
+            }
+            #sanjiao{
+            	position:relative;
+            	top: -100%;
+                left: -4%;
+            	animation:come 3s linear 1 ;
+            }
+            @keyframes come{
+            	0%{opacity:0}
+            	100%{opacity:1}
+            }
+            @keyframes come2{
+            	0%{opacity:0}
+            	50%{opacity:0}
+            	75%{opacity:0}
+            	100%{opacity:1}
+            }
+            a{
+            	border:2px solid black;
+            	position:relative;
+            	top: -245%;
+                left: 40%;
+            }
+	    </style>
+	    <script type="text/javascript">
+	    	function change(){
+	    		document.getElementById("chahu").style.left="5%";
+	    		document.getElementById("chahu").style.transform="rotateY(-180deg)";
+	    	}
+	    </script>
+	</head>
+	<body>
+			<div id="mainDiv">
+				<span>第四汤</span>
+				<img id="tang" src="img/tang2.png" />
+				<a href="index43.html"><img id="chaxian" src="img/chashai.png"/></a>
+				<img class="dituo" src="img/dituo.png"/>
+				<img id="sanjiao" src="img/sanjiao.png">
+				<div class="content" >稍宽勿速，轻云渐生。第四汤的注水要少<br/><font color="brown" size="4%" >[点击茶壶，注入少量水。点击茶筅进入下一界面]</font></div>
+				<img id="chahu" src="img/huyou.png" / onclick="change()">
+				<a href="index43.html" target="_self">下一工序</a>
+			</div>
+			
+	</body>
+</html>

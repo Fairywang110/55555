@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	    <style type="text/css">
+	        *,body{
+	        	width:100%;
+	        	height:100%;
+	            padding: 0;
+	            margin:0; 
+	            overflow: hidden;
+	        }
+	        #mainDiv{
+            	width:100%;
+            	height:100%;
+                margin:0px auto;
+                padding:0px auto;
+            	background-image:url("img/bg.jpg");
+            	background-size:cover;
+            	background-position:center;
+            	background-repeat:no-repeat;	
+            }
+            .dituo{
+            	width:65%;
+            	height:22%;
+            	position:relative;
+            	top:28%;
+            	left:20%;
+	            z-index:1;
+            }
+            #chaxian{
+            	width: 40%;
+			    height: 40%;
+			    position: relative;
+			    top: -207%;
+			    left: 45%;
+				animation:come 3s linear 1 ;
+				z-index:3;
+            }
+            #chahu{
+            	width: 20%;
+			    height: 30%;
+			    position: relative;
+			    top: 50%;
+			    left: -42%;
+            	animation:come 3s linear 1 ;
+            	z-index:2;	
+            }
+             span{
+            	font-size:40px;
+            	font-family:"zihun215hao-qingpingshoushu";
+            	position:relative;
+            	top:-23.5%;
+            	left:40%;
+            }
+            .content{
+            	font-size:25px;
+            	font-family:"zihun215hao-qingpingshoushu";
+            	text-align:center;
+            	position:relative;
+            	top: -74.5%;
+            	left:9%;
+            	animation:come2 5s linear 1;
+            }
+            .content font{
+            	font-family:"新宋体";
+            }
+            #tang{
+            	width: 50%;
+			    height: 35%;
+			    position: relative;
+			    top: 20%;
+			    left: 5%;
+			    
+            }
+            #sanjiao{
+            	position:relative;
+            	top: -59%;
+                left: 21%;
+            	animation:come 3s linear 1 ;
+            }
+            @keyframes come{
+            	0%{opacity:0}
+            	100%{opacity:1}
+            }
+            @keyframes come2{
+            	0%{opacity:0}
+            	50%{opacity:0}
+            	75%{opacity:0}
+            	100%{opacity:1}
+            }
+            a{
+            	border:2px solid black;
+            	position:relative;
+            	top: -220%;
+                left: 40%;
+            }
+	    </style>
+	</head>
+	<body>
+		<div id="mainDiv" >
+			<span>第四汤</span>
+			<img id="tang" src="img/tang2.png" />
+			<img id="chahu" src="img/hu.png"/>
+			<img class="dituo" src="img/dituo.png"/>
+			<img id="sanjiao" src="img/sanjiao.png">
+			<div class="content" >茶筅转动的幅度要大而慢，这样，<br/>云雾渐渐从茶面生起。<br/><font color="brown" size="4%" >[按住工具栏中茶筅，移动至茶盏上方]</font></div>
+			<img id="chaxian" src="img/chashai.png" / onclick="change()">
+			<a href="index44.html" target="_self">下一工序</a>
+		</div>
+	</body>
+</html>

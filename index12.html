@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>曰茶去</title>
+		<style>
+			 *,body{
+        	width:100%;
+        	height:100%;
+            padding: 0;
+            margin:0;
+            
+        }
+        #bg{
+            width: 100%;
+            height: 100%;
+            margin:0px auto;
+            padding:0px auto;
+            position:absolute;
+            background-image: url('img/daobg.jpg');
+            background-size: cover;
+            position:relative;
+            z-index:1;
+        }
+		p{
+			font-size:40px;
+        	font-family: "zihun215hao-qingpingshoushu";
+        	position:relative;
+        	top:7.5%;
+        	left:43%;
+			z-index:2;
+		}
+		#nian1{
+			width: 70%;
+		    height: 50%;
+		    position: relative;
+		    top: -76%;
+		    left: 16%;
+		}	
+		#nian12{
+			width: 16%;
+		    height: 16%;
+		    position: relative;
+		    top: -113%;
+		    left: -10%;
+		    animation:nian 5.5s linear 1;
+		}
+		.content{
+			width: 70%;
+		    height: 10%;
+		    font-size: 25px;
+		    text-align: center;
+		    font-family:"zihun215hao-qingpingshoushu";
+		    position: relative;
+		    top: -64.5%;
+		    left: 24%;
+		    animation:nian 4s linear 1;
+		}
+		.content font{
+            	font-family:"新宋体";
+        }
+		@keyframes nian{
+			0%{opacity:0}
+			50%{opacity:0}
+			100%{opacity:1}
+		}
+		a{
+			text-decoration:none;
+			color:black;
+		}
+		</style>
+	</head>
+	<body>
+		<a href="index13.html" target="_self">
+			<div id="bg">
+				<p>碾    茶</p>
+				<img id="nian1" src="img/nian1.png"><img id="nian12" src="img/nian12.png"/>
+				<div class="content">将碎茶用纸包裹捣碎后，放入茶碾中磨细<br/><font color="brown" size="4%">[点击屏幕即可]</font></div>
+			</div>
+		</a>
+	</body>
+</html>
